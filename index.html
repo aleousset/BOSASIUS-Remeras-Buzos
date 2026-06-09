@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Remeras y Buzos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Encabezado de la tienda -->
+    <header class="header">
+        <div class="logo">
+            <h1>BOSASIUS</h1>
+        </div>
+        <nav class="nav">
+            <a href="#remeras">Remeras</a>
+            <a href="#buzos">Buzos</a>
+            <a href="#contacto" class="btn-contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Sección Principal de Productos -->
+    <main class="contenedor">
+        
+        <section id="remeras" class="categoria-seccion">
+            <h2>Nuestras Remeras</h2>
+            <div class="productos-grid">
+                <!-- Tarjeta de Producto 1 -->
+                <article class="producto-card">
+                    <img src="./img/socrates.jfif" alt="Remera Oversize Negra" width="30%" height="30%">
+                    <div class="producto-info">
+                        <h3>Remera Oversize Negra</h3>
+                        <p class="precio">$15.000</p>
+                        <a href="https://wa.me/3815061263?text=Hola!%20Me%20interesa%20la%20Remera%20Oversize%20Negra" target="_blank" rel="noopener noreferrer" class="btn-comprar">Comprar por WhatsApp</a>
+                    </div>
+                </article>
+
+                <!-- Tarjeta de Producto 2 -->
+                <article class="producto-card">
+                    <img src="./img/GLADYS.jpg" alt="Remera Basic Blanca" width="30" height="30">
+                    <div class="producto-info">
+                        <h3>Remera Basic Blanca</h3>
+                        <p class="precio">$12.500</p>
+                        <a href="https://wa.me/3815061263?text=Hola!%20Me%20interesa%20la%20Remera%20Basic%20Blanca" target="_blank" rel="noopener noreferrer" class="btn-comprar">Comprar por WhatsApp</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="buzos" class="categoria-seccion">
+            <h2>Nuestros Buzos</h2>
+            <div class="productos-grid">
+                <!-- Tarjeta de Producto 3 -->
+                <article class="producto-card">
+                    <img src="https://via.placeholder.com/300x350" alt="Buzo Hoodie Gris">
+                    <div class="producto-info">
+                        <h3>Buzo Hoodie Gris</h3>
+                        <p class="precio">$28.000</p>
+                        <a href="https://wa.me/3815061263?text=Hola!%20Me%20interesa%20el%20Buzo%20Hoodie%20Gris" target="_blank" rel="noopener noreferrer" class="btn-comprar">Comprar por WhatsApp</a>
+                    </div>
+                </article>
+
+                <!-- Tarjeta de Producto 4 -->
+                <article class="producto-card">
+                    <img src="https://via.placeholder.com/300x350" alt="Buzo Crewneck Negro">
+                    <div class="producto-info">
+                        <h3>Buzo Crewneck Negro</h3>
+                        <p class="precio">$26.500</p>
+                        <a href="https://wa.me/3815061263?text=Hola!%20Me%20interesa%20el%20Buzo%20Crewneck%20Negro" target="_blank" rel="noopener noreferrer" class="btn-comprar">Comprar por WhatsApp</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Solicitado -->
+    <footer id="contacto" class="footer">
+        <div class="footer-contenido">
+            <p class="frase-motivadora">"Viste con confianza, camina con propósito. Tu estilo es tu mejor carta de presentación."</p>
+            <p class="telefono-texto">¿Tenés dudas? Escribinos al: <strong>3815061263</strong></p>
+            
+            <!-- Botón de WhatsApp integrado -->
+            <a href="https://wa.me/3815061263?text=Hola!%20Quiero%20hacer%20una%20consulta%20sobre%20la%20ropa." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-whatsapp">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397 0 11.948 0c3.179.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.34 11.905-11.89 11.905-2.01-.001-3.987-.512-5.747-1.483L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.725 1.451 5.405.001 9.801-4.392 9.803-9.797.001-2.618-1.018-5.08-2.87-6.934C16.397 2.02 13.934 1 11.312 1c-5.41 0-9.804 4.394-9.806 9.799-.001 1.693.443 3.344 1.286 4.795l-.995 3.635 3.722-.975z"/></svg>
+                Chatear por WhatsApp
+            </a>
+        </div>
+    </footer>
+
+</body>
+<!-- El interruptor invisible que controlará todo -->
+<input type="checkbox" id="cart-toggle" class="cart-checkbox">
+
+<!-- El botón flotante del carrito que el usuario ve -->
+<label for="cart-toggle" class="cart-btn-flotante">
+    🛒 <span class="cart-count">2</span>
+</label>
+
+<!-- El panel lateral del carrito -->
+<aside class="carrito-panel">
+    <div class="carrito-header">
+        <h3>Tu Carrito (Simulado)</h3>
+        <!-- Botón para cerrar -->
+        <label for="cart-toggle" class="close-cart">✕</label>
+    </div>
+    
+    <div class="carrito-items">
+        <!-- Item 1 -->
+        <div class="item-carrito">
+            <img src="https://via.placeholder.com/50" alt="Remera">
+            <div>
+                <h4>Remera Oversize Negra</h4>
+                <p>1 x $15.000</p>
+            </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="item-carrito">
+            <img src="https://via.placeholder.com/50" alt="Buzo">
+            <div>
+                <h4>Buzo Hoodie Gris</h4>
+                <p>1 x $28.000</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="carrito-footer">
+        <div class="total">
+            <span>Total:</span>
+            <span>$43.000</span>
+        </div>
+        <a href="https://wa.me/5493815000000?text=Hola!%20Quiero%20encargar%20los%20productos%20de%20mi%20carrito" target="_blank" class="btn-finalizar">
+            Enviar pedido por WhatsApp
+        </a>
+    </div>
+</aside>
+</html>
